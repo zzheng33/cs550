@@ -38,24 +38,11 @@ folders_to_process = [
     "minidft_900",
     "minife_18",
     "minife_144",
-    "minife_1152"
-]
-    # "MultiGrid_1000"
-    # "minife_144",
-    # "minife_1152",
-    # "MultiGrid_125",
-folders_to_process = [
-    "CR_100",
-    "MultiGrid_1000"
-    "minife_144",
     "minife_1152",
-    "MultiGrid_125"
-    ]
-
-folders_to_process = [
-    "amg_27",
-    "amg_216",
-    "amg_1728"]
+    "MultiGrid_1000",
+    "MultiGrid_125",
+    "CR_100"
+]
 
 # MPI execution settings
 RANKS = 64

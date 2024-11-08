@@ -1,0 +1,127 @@
+NIC num injection port not specified, setting to 1
+NIC seq delay not specified, setting to 10.000000
+NIC num copy queues not specified, setting to 1
+
+ Total nodes 2550 routers 510 groups 51 radix 20 
+within node transfer per byte delay is 0.190476
+credit_size not specified, using default: 8
+no credit_delay specified - all credit delays set to 1.42
+Within-node eager limit (node_eager_limit) not specified, setting to 16000
+
+ROSS Core Configuration: 
+        Total PEs                                                   64
+        Total KPs                                          [Nodes (64) x KPs (16)] 1024
+        Total LPs                                                 5610
+        Simulation End Time                                3600000000000.00
+        LP-to-PE Mapping                                   model defined
+
+
+ROSS Event Memory Allocation:
+        Model events                                            522529
+        Network events                                              16
+        Total events                                             22544
+
+*** START PARALLEL OPTIMISTIC SIMULATION WITH SUSPEND LP FEATURE ***
+
+Set num_servers per router 5, servers per injection queue per router 5, servers per node copy queue per node 1, num nics 5
+GVT #2925: simulation 100% complete, max event queue size 195 (GVT = MAX).
+AVL tree size: 0
+*** END SIMULATION ***
+
+
+        : Running Time = 155.1398 seconds
+
+TW Library Statistics:
+        Total Events Processed                                  749009
+        Events Aborted (part of RBs)                                 0
+        Events Rolled Back                                           0
+        Event Ties Detected in PE Queues                             0
+        Efficiency                                              100.00 %
+        Total Remote (shared mem) Events Processed                   0
+        Percent Remote Events                                     0.00 %
+        Total Remote (network) Events Processed                      0
+        Percent Remote Events                                     0.00 %
+
+        Total Roll Backs                                             0
+        Primary Roll Backs                                           0
+        Secondary Roll Backs                                         0
+        Fossil Collect Attempts                                 187264
+        Total GVT Computations                                    2926
+
+        Net Events Processed                                    749009
+        Event Rate (events/sec)                                 4828.0
+        Total Events Scheduled Past End Time                         0
+
+TW Memory Statistics:
+        Events Allocated                                        522545
+        Memory Allocated                                        908441
+        Memory Wasted                                              462
+
+TW Network Statistics:
+        Remote sends                                                 0
+        Remote recvs                                                 0
+
+TW Data Structure sizes in bytes (sizeof):
+        PE struct                                                 3888
+        KP struct                                                  960
+        LP struct                                                  960
+        LP Model struct                                             96
+        LP RNGs                                                     80
+        Total LP                                                  1136
+        Event struct                                               976
+        Event struct with Model                                   1744
+
+TW Clock Cycle Statistics (MAX values in secs at 1.0000 GHz):
+        Initialization                                          0.0682
+        Priority Queue (enq/deq)                                0.0024
+        AVL Tree (insert/delete)                                0.0000
+        LZ4 (de)compression                                     0.0000
+        Buddy system                                            0.0000
+        Event Processing                                        0.0225
+        Event Cancel                                            0.0000
+        Event Abort                                             0.0000
+
+        GVT                                                     3.8783
+        Fossil Collect                                          0.0013
+        Primary Rollbacks                                       0.0000
+        Network Read                                            0.0015
+        Other Network                                           0.0000
+        Instrumentation (computation)                           0.0000
+        Instrumentation (write)                                 0.0000
+        Total Time (Note: Using Running Time above for Speedup)      3.8785
+
+TW GVT Statistics: MPI AllReduce
+        GVT Interval                                                16
+        GVT Real Time Interval (cycles)                    0
+        GVT Real Time Interval (sec)                        0.00000000
+        Batch Size                                                  16
+
+        Forced GVT                                                   0
+        Total GVT Computations                                    2926
+        Total All Reduce Calls                                    5852
+        Average Reduction / GVT                                   2.00
+
+ Total bytes sent 13584368 recvd 13584368 
+ max runtime 516858236.744264 ns avg runtime 516796706.518152 
+ max comm time 116107426.680681 avg comm time 96569098.407041 
+ max send time 262083818.397072 avg send time 99303185.769724 
+ max recv time 223532381.627079 avg recv time 98814766.258778 
+ max wait time 116107426.588365 avg wait time 96569098.286344 
+
+----------
+Per App Max Elapsed Times:
+----------
+LP-IO: writing output to amg_27_dfly-276606-1731103050/
+LP-IO: data files:
+   amg_27_dfly-276606-1731103050/dragonfly-router-traffic
+   amg_27_dfly-276606-1731103050/dragonfly-router-stats
+   amg_27_dfly-276606-1731103050/dragonfly-msg-stats
+   amg_27_dfly-276606-1731103050/model-net-category-all
+   amg_27_dfly-276606-1731103050/model-net-category-high
+   amg_27_dfly-276606-1731103050/avg-all-reduce-time
+   amg_27_dfly-276606-1731103050/mpi-replay-stats
+ Average number of hops traversed 1.656494 average chunk latency 0.442519 us maximum chunk latency 8.427689 us avg message size 812.563110 bytes finished messages 16820 finished chunks 65012 
+
+ ADAPTIVE ROUTING STATS: 65012 chunks routed minimally 0 chunks routed non-minimally completed packets 65012 
+
+ Total packets generated 39722 finished 39722 
