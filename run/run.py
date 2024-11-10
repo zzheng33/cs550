@@ -8,19 +8,19 @@ TRACE_DIR = "/home/zzheng33/codes-dev/traces"
 # Binary location
 BIN = "/home/zzheng33/codes-dev/codes/build/src/network-workloads/model-net-mpi-replay"
 
-# Configuration files for two rounds
-CONFIGS = [
-    ("/home/zzheng33/conf/modelnet-mpi-test-dfly-amg-1728.conf", "dfly"),
-    ("/home/zzheng33/conf/modelnet-mpi-test-fattree.conf", "fattree")
-]
+# # Configuration files for two rounds
+# CONFIGS = [
+#     ("/home/zzheng33/conf/modelnet-mpi-test-dfly-amg-1728.conf", "dfly"),
+#     ("/home/zzheng33/conf/modelnet-mpi-test-fattree.conf", "fattree")
+# ]
 
 
-CONFIGS = [
-     ("/home/zzheng33/conf/modelnet-mpi-test-fattree.conf", "fattree")
-]
+# CONFIGS = [
+#      ("/home/zzheng33/conf/modelnet-mpi-test-fattree.conf", "fattree")
+# ]
 
 CONFIGS = [
-    ("/home/zzheng33/conf/modelnet-mpi-test-dfly-amg-1728.conf", "dfly")
+    ("/home/zzheng33/conf/modelnet-mpi-test-dfly-1056.conf", "dfly")
     
 ]
 
@@ -28,24 +28,19 @@ CONFIGS = [
 folders_to_process = [
     "amg_27",
     "amg_216",
-    "amg_1728",
-    "miniamr_1728",
     "miniamr_64",
-    "minidft_9",
-    "minidft_76",
-    "minidft_125",
-    "minidft_192",
-    "minidft_900",
     "minife_18",
-    "minife_144",
-    "minife_1152",
-    "MultiGrid_1000",
     "MultiGrid_125",
     "CR_100"
 ]
 
+folders_to_process = [
+    "MultiGrid_1000"
+]
+
+
 # MPI execution settings
-RANKS = 64
+RANKS = 80
 
 # Iterate over the two configurations and their respective suffixes
 for config_path, suffix in CONFIGS:
