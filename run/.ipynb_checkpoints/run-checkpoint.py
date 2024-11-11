@@ -31,12 +31,11 @@ folders_to_process = [
     "miniamr_64",
     "minife_18",
     "MultiGrid_125",
-    "CR_100"
-]
-
-folders_to_process = [
+    "CR_100",
     "MultiGrid_1000"
 ]
+
+
 
 
 # MPI execution settings
