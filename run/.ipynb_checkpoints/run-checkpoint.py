@@ -20,7 +20,7 @@ BIN = "/home/zzheng33/codes-dev/codes/build/src/network-workloads/model-net-mpi-
 # ]
 
 CONFIGS = [
-    ("/home/zzheng33/conf/modelnet-mpi-test-dfly-1056.conf", "dfly")
+    ("/home/zzheng33/cs550/conf/modelnet-mpi-test-dfly-1056.conf", "dfly")
     
 ]
 
