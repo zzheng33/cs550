@@ -20,26 +20,30 @@ BIN = "/home/zzheng33/codes-dev/codes/build/src/network-workloads/model-net-mpi-
 # ]
 
 CONFIGS = [
-    ("/home/zzheng33/cs550/conf/modelnet-mpi-test-dfly-1056.conf", "dfly")
+    ("/home/zzheng33/cs550/conf/modelnet-mpi-test-dfly.conf", "dfly")
     
 ]
 
 # List of specific folders to process
 folders_to_process = [
-    "amg_27",
     "amg_216",
+    "amg_27",
     "miniamr_64",
     "minife_18",
     "MultiGrid_125",
-    "CR_100",
-    "MultiGrid_1000"
+    "CR_100"
+]
+
+folders_to_process = [
+    "miniamr_64"
 ]
 
 
 
 
+
 # MPI execution settings
-RANKS = 80
+RANKS = 4
 
 # Iterate over the two configurations and their respective suffixes
 for config_path, suffix in CONFIGS:
@@ -74,7 +78,6 @@ for config_path, suffix in CONFIGS:
                 f"--workload_file={WORKLOAD}",
                 f"--lp-io-dir={lp_io_dir}",
                 "--lp-io-use-suffix=1",
-                "--extramem=500000",
                 config_path
             ]
             try:
