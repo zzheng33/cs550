@@ -35,7 +35,7 @@ folders_to_process = [
 ]
 
 folders_to_process = [
-    "miniamr_64"
+    "amg_27"
 ]
 
 
