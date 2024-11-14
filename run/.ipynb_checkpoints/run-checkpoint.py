@@ -35,7 +35,7 @@ folders_to_process = [
 ]
 
 folders_to_process = [
-    "amg_27"
+    "CR_100"
 ]
 
 
@@ -43,7 +43,7 @@ folders_to_process = [
 
 
 # MPI execution settings
-RANKS = 4
+RANKS = 8
 
 # Iterate over the two configurations and their respective suffixes
 for config_path, suffix in CONFIGS:
